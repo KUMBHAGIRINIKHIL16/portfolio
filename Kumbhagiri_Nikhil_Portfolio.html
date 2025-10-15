@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kumbhagiri Nikhil — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff; --muted:#6b7280; --accent:#0f172a; --card:#f8fafc; --primary:#0b63d4;
+      --maxw:1000px;
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:var(--accent);background:var(--bg);-webkit-font-smoothing:antialiased}
+    a{color:inherit}
+    .wrap{max-width:var(--maxw);margin:36px auto;padding:28px}
+
+    header{display:flex;align-items:center;gap:20px}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,#eef2ff,#e6f7ff);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--primary);font-size:28px}
+    .title{display:flex;flex-direction:column}
+    .name{font-size:20px;font-weight:800;color:var(--accent);margin:0}
+    .role{font-size:13px;color:var(--muted);margin-top:6px}
+
+    .card{background:var(--card);border-radius:var(--radius);padding:20px;margin-top:20px;box-shadow:0 6px 18px rgba(11,22,46,0.06)}
+
+    .grid{display:grid;grid-template-columns:280px 1fr;gap:20px;margin-top:18px}
+
+    /* Left column */
+    .left .section-title{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+    .left p{margin:6px 0;color:var(--muted);font-size:14px}
+    .skill-badge{display:inline-block;padding:6px 10px;margin:6px 6px 6px 0;background:#fff;border-radius:8px;border:1px solid rgba(15,23,42,0.04);font-size:13px}
+    .contact-row{display:flex;align-items:center;gap:10px;margin:6px 0}
+    .muted{color:var(--muted)}
+
+    /* Right column */
+    h3{margin:0 0 10px 0}
+    .about{line-height:1.6;color:var(--muted);font-size:15px}
+
+    .project{padding:14px;border-radius:10px;background:linear-gradient(180deg,rgba(11,99,212,0.03),transparent);margin-bottom:12px}
+    .project h4{margin:0 0 6px 0}
+    .project p{margin:0;color:var(--muted);font-size:14px}
+
+    .certs{display:flex;flex-direction:column;gap:8px}
+    .cert-item{padding:10px;border-radius:8px;background:#fff;border:1px solid rgba(11,22,46,0.03);font-size:14px}
+
+    .actions{display:flex;gap:12px;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;border:none;cursor:pointer;text-decoration:none;font-weight:600}
+    .btn-primary{background:var(--primary);color:white}
+    .btn-outline{background:transparent;border:1px solid rgba(11,22,46,0.08)}
+
+    footer{margin-top:22px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.avatar{width:84px;height:84px}}
+
+    /* Print-friendly */
+    @media print{body{background:white} .wrap{box-shadow:none} .actions, .avatar{display:none}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" style="padding:20px">
+      <header>
+        <div class="avatar">KN</div>
+        <div class="title">
+          <h1 class="name">Kumbhagiri Nikhil</h1>
+          <div class="role">CSE Student</div>
+        </div>
+        <div style="margin-left:auto;display:flex;gap:10px;align-items:center">
+          <a class="btn btn-outline" href="#contact">Contact</a>
+          <a class="btn btn-primary" id="downloadResume" href="#">Download Resume</a>
+        </div>
+      </header>
+
+      <div class="grid">
+        <aside class="left">
+          <section class="card">
+            <div class="section-title">About</div>
+            <p class="about">An optimistic love to hang about work, Good at problem solving. Great in both individual and team work. Greatly believed in communication and always pushing myself about the idea implementation.</p>
+          </section>
+
+          <section class="card" style="margin-top:12px">
+            <div class="section-title">Skills</div>
+            <div>
+              <span class="skill-badge">Java</span>
+              <span class="skill-badge">HTML</span>
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">Deep Learning</span>
+              <span class="skill-badge">Machine Learning</span>
+            </div>
+          </section>
+
+          <section class="card" style="margin-top:12px">
+            <div class="section-title">Contact</div>
+            <div class="contact-row"><strong>Email:</strong><a href="mailto:kumbhagirinikhil1694421@gmail.com">kumbhagirinikhil1694421@gmail.com</a></div>
+            <div class="contact-row"><strong>GitHub:</strong><a href="https://github.com/KUMBHAGIRINIKHIL16" target="_blank">github.com/KUMBHAGIRINIKHIL16</a></div>
+          </section>
+        </aside>
+
+        <main>
+          <section class="card">
+            <h3>Projects</h3>
+            <div class="project">
+              <h4>1. Detection of Animals for Road Safety by using Deep Learning</h4>
+              <p>Animal detection for road safety in vehicles is an important development in the automotive industry. Detection systems help drivers detect animals on or near the road and alert them to potential wildlife-vehicle collisions.</p>
+            </div>
+
+            <div class="project">
+              <h4>2. Sustainable Agriculture – Experiential Service Project</h4>
+              <p>Proposed a digital agriculture platform (mobile app + portal) to provide farmers real-time guidance for crop production. Includes disease prediction for plants across seasons/regions and tailored prevention and fertilizer recommendations.</p>
+            </div>
+
+            <h3 style="margin-top:18px">Certificates & Achievements</h3>
+            <div class="certs">
+              <div class="cert-item">
+                <strong>Generative AI — Coursera</strong>
+                <div class="muted">Gained foundational knowledge of Generative AI applications in software development.</div>
+              </div>
+
+              <div class="cert-item">
+                <strong>Competitive Coding Essentials — Code Combat</strong>
+                <div class="muted">Selected and completed the course with top 1.5% selection.</div>
+              </div>
+            </div>
+
+            <h3 style="margin-top:18px">Why hire me?</h3>
+            <p class="about">I bring a strong problem-solving mindset, solid programming fundamentals (Java, Python, Web), practical project experience in deep learning and digital agriculture, and the ability to communicate clearly within teams and with stakeholders.</p>
+
+            <div class="actions">
+              <a class="btn btn-primary" href="mailto:kumbhagirinikhil1694421@gmail.com?subject=Opportunity%20-%20Kumbhagiri%20Nikhil">Email Me</a>
+              <a class="btn btn-outline" href="https://github.com/KUMBHAGIRINIKHIL16" target="_blank">View GitHub</a>
+            </div>
+
+          </section>
+
+          <section class="card" id="contact" style="margin-top:12px">
+            <h3>Contact</h3>
+            <p class="muted">Prefer email for opportunities and project collaborations.</p>
+            <form id="contactForm" style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+              <input name="name" placeholder="Your name" style="padding:10px;border-radius:8px;border:1px solid rgba(11,22,46,0.06)">
+              <input name="email" placeholder="Your email" style="padding:10px;border-radius:8px;border:1px solid rgba(11,22,46,0.06)">
+              <textarea name="message" placeholder="Message" rows="4" style="padding:10px;border-radius:8px;border:1px solid rgba(11,22,46,0.06)"></textarea>
+              <div style="display:flex;gap:8px">
+                <button type="submit" class="btn btn-primary">Send</button>
+                <button type="reset" class="btn btn-outline">Reset</button>
+              </div>
+            </form>
+            <div id="formMsg" style="margin-top:8px;color:green;display:none">Message prepared. Mail client opened.</div>
+          </section>
+
+        </main>
+      </div>
+
+      <footer>© "Kumbhagiri Nikhil" — CSE Student • Built with care</footer>
+    </div>
+  </div>
+
+  <script>
+    // Smooth scroll for in-page links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+      const href=a.getAttribute('href');
+      if(href.length>1){
+        e.preventDefault();
+        const el=document.querySelector(href);
+        if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+      }
+    }));
+
+    // Contact form: open mail client with prefilled data
+    const form=document.getElementById('contactForm');
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      const n=form.name.value || 'No name';
+      const em=form.email.value || '';
+      const msg=form.message.value || '';
+      const subject=encodeURIComponent('Contact from Portfolio — '+n);
+      const body=encodeURIComponent('Name: '+n+'\nEmail: '+em+'\n\n'+msg);
+      const mailto='mailto:kumbhagirinikhil1694421@gmail.com?subject='+subject+'&body='+body;
+      window.location.href = mailto;
+      document.getElementById('formMsg').style.display='block';
+    });
+
+    // Download a simple resume (text) generated from the page
+    document.getElementById('downloadResume').addEventListener('click',function(e){
+      e.preventDefault();
+      const resumeText = `Kumbhagiri Nikhil\nCSE Student\n\nAbout:\nAn optimistic love to hang about work. Good at problem solving. Great in both individual and team work. Greatly believed in communication and always pushing myself about the idea implementation.\n\nSkills:\nJava, HTML, Python, Deep Learning, Machine Learning\n\nProjects:\n1) Detection of Animals for Road Safety by using Deep Learning - Animal detection for road safety in vehicles; alerts drivers to potential wildlife collisions.\n\n2) Sustainable Agriculture – Experiential Service Project - Digital agriculture platform with disease prediction and recommendations for farmers.\n\nCertificates:\n- Generative AI (Coursera)\n\nAchievements:\n- Competitive Coding Essentials (Code Combat) — Top 1.5%\n\nContact: kumbhagirinikhil1694421@gmail.com\nGitHub: https://github.com/KUMBHAGIRINIKHIL16`;
+      const blob=new Blob([resumeText],{type:'text/plain'});
+      const url=URL.createObjectURL(blob);
+      const a=document.createElement('a');a.href=url;a.download='Kumbhagiri_Nikhil_Resume.txt';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+</html>
